@@ -45,8 +45,7 @@ while (start == 0){
       print("result: win") 
       win <- win +1
       }
-
-                             
+                            
   ## break
   else if (user_play == 4){
     print("play result")
