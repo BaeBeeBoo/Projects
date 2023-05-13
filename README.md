@@ -1,7 +1,7 @@
 # Welcome To My Portfolio!
-( ◜◒◝ )♡
 
-## Spreadsheets
+
+## ( ◜◒◝ )♡ Spreadsheets
 
 ## SQL Database
 
