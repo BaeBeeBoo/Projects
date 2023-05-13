@@ -3,14 +3,14 @@
 
 ## ( ◜◒◝ )♡ Spreadsheets
 
-## SQL Database
+## ( ◜◒◝ )♡ SQL Database
 
-## R Programming
+## ( ◜◒◝ )♡ R Programming
 
-## Data Transformation
+## ( ◜◒◝ )♡ Data Transformation
 
-## Data Visualization
+## ( ◜◒◝ )♡ Data Visualization
 
-## Essential Python for Data Analyst
+## ( ◜◒◝ )♡ Essential Python for Data Analyst
 
-## Dashboard
+## ( ◜◒◝ )♡ Dashboard
