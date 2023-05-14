@@ -1,4 +1,5 @@
 -- Create 1st dimension table
+
 CREATE TABLE DimMember (
     member_id    INT NOT NULL,
     member_name  TEXT,
