@@ -1,4 +1,4 @@
-# NYC Flights 2013 Analysis
+NYC Flights 2013 Analysis
 
 install.packages("nycflights13")
 library(nycflights13)
