@@ -17,7 +17,7 @@
 - [ ] [NYC_Flights_2013_Analysis.ipynb](https://github.com/baebeeboo/bootcamp_projects/blob/main/R/NYC_Flights_2013_Analysis.ipynb) - Analyzing the `nycflights13` dataset using the `dplyr` package in `R`
 
 ## Data Visualization
-- [ ] [Coffee_Chain.pdf](https://github.com/baebeeboo/bootcamp_projects/blob/main/R/Coffee_Chain.pdf) - Creating 5 charts to visualize the data queried from the `data.world` dataset using the `ggplot2` package in `R`
+- [ ] [Coffee_Chain.pdf](https://github.com/baebeeboo/bootcamp_projects/blob/main/R/Coffee_Chain.pdf) - Creating 4 charts to visualize the data queried from the `data.world` dataset using the `ggplot2` package in `R`
 
 ## Essential Python for Data Analyst
 - [ ] [Analyzing_Sales_Data.ipynb](https://github.com/baebeeboo/bootcamp_projects/blob/main/Python/Final%20Project%20-%20Analyzing%20Sales%20Data.ipynb) - Using the `pandas` library to analyze sales data
