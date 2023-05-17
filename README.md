@@ -1,5 +1,5 @@
 # Welcome To My Portfolio!
-( ◜◒◝ )♡ These are the projects I have done in `DataRockie` Bootcamp.
+( ◜◒◝ )♡ These are the projects and homework I have done in `DataRockie` Bootcamp.
 
 ## Spreadsheets
 - [ ] [Dynamic Query](https://github.com/baebeeboo/bootcamp_projects/blob/main/Spreadsheets/Spreadsheets_Dynamic_Query.PNG) - Queries that return results dynamically
