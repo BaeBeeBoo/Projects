@@ -2,7 +2,7 @@
 ( ◜◒◝ )♡ These are the projects and homework I have done in `DataRockie` Bootcamp.
 
 ## Spreadsheets
-- [ ] [Dynamic Query](https://github.com/baebeeboo/bootcamp_projects/blob/main/Spreadsheets/Spreadsheets_Dynamic_Query.PNG) - Queries that return results dynamically
+- [ ] [Dynamic Query](https://github.com/baebeeboo/bootcamp_projects/blob/main/Spreadsheets/Dynamic%20Query.PNG) - Queries that return results dynamically
 - [ ] [Converting Date](https://github.com/baebeeboo/bootcamp_projects/blob/main/Spreadsheets/Convert%20TH%20to%20EN%20Date.PNG) - Converting TH date to EN date
 - [ ] [ID Card Parser](https://github.com/baebeeboo/bootcamp_projects/blob/main/Spreadsheets/ID%20Card%20Parser.PNG) - Using regular expression to extract and parse ID card information
 
