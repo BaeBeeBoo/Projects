@@ -1,201 +1,180 @@
--- Create 1st dimension table
+.table
 
-CREATE TABLE DimMember (
-    member_id    INT NOT NULL,
-    member_name  TEXT,
-    member_type	TEXT,
-    gender      TEXT,
-		age         INT,
-	  phone       TEXT,
-		staff_id INT,
-    FOREIGN KEY (member_type) REFERENCES DimMember_type (member_type),
-    FOREIGN KEY (staff_id) REFERENCES staff(staff_id)
+.mode column
+
+CREATE TABLE IF NOT EXISTS customer (
+	customer_id INTEGER PRIMARY KEY,
+	name TEXT NOT NULL,
+	city TEXT,
+	email TEXT
 );
 
-INSERT INTO DimMember VALUES
-(1, 'Lana', 'nm', 'Female', 22, '0691981923', 1),
-(2, 'Austin', 'nm', 'Male', 19, '0876236437', 2),
-(3, 'Nadia', 'no', 'Female', 26, '0916541452', 2),
-(4, 'Christopher', 'nm', 'Male', 20, '0858373812', 1),
-(5, 'Lucien', 'no', 'Male', 29, '0654039855', 2);
+INSERT INTO customer VALUES
+(1, "John Doe", "San Francisco", "johndoe@gmail.com"),
+(2, "Jane Doe", "New York", "janedoe@yahoo.com"),
+(3, "John Smith", "Los Angeles", "johnsmith@gmail.com"),
+(4, "Jane Smith", "Chicago", "janesmith@yahoo.com"),
+(5, "Peter Jones", "Dallas", "peterjones@gmail.com"),
+(6, "Mary Jones", "Houston", "maryjones@yahoo.com"),
+(7, "David Brown", "Austin", "davidbrown@gmail.com"),
+(8, "Susan Brown", "San Antonio", "susanbrown@yahoo.com"),
+(9, "Michael Green", "Fort Worth", "michaelgreen@gmail.com"),
+(10, "Jennifer Green", "El Paso", "jennifergreen@yahoo.com"),
+(11, "Alex Doe", "Seattle", "alexdoe@hotmail.com"),
+(12, "Maria Smith", "Denver", "mariasmith@hotmail.com"),
+(13, "Peter Brown", "Phoenix", "peterbrown@hotmail.com"),
+(14, "Susan Green", "Las Vegas", "susangreen@hotmail.com"),
+(15, "David Williams", "El Paso", "davidwilliams@hotmail.com");
 
-SELECT * FROM DimMember;
-
--- Create 2nd dimension table
-
-CREATE TABLE DimMenu (
-	  menu_id   INT NOT NULL,
-    menu_name TEXT,
-		menu_type TEXT,
-		price     INT
+CREATE TABLE IF NOT EXISTS menu (
+  menu_id INTEGER PRIMARY KEY,
+  menu_name TEXT NOT NULL,
+  price INTEGER NOT NULL
 );
 
-INSERT INTO DimMenu VALUES
-(1, 'Cappuccino', 'Drink', 55),
-(2, 'Cheese Cake', 'Dessert', 45),
-(3, 'Cocoa', 'Drink', 50),
-(4, 'Green Tea', 'Drink', 50),
-(5, 'Brownie', 'Dessert', 45),
-(6, 'Muffin', 'Dessert', 45);
+INSERT INTO menu VALUES
+(1, "Fillet Burger", 5.99),
+(2, "Fillet Tower Burger", 6.99),
+(3, "Zinger Burger", 5.99),
+(4, "Zinger Tower Burger", 6.99),
+(5, "Vegan Burger", 5.99);
 
-SELECT * FROM DimMenu;
-
--- Create 3rd dimension table
-
-CREATE TABLE DimStaff (
-    staff_id   INT NOT NULL,
-    staff_name TEXT
+CREATE TABLE IF NOT EXISTS ingredient (
+  ingredient_id INTEGER PRIMARY KEY,
+  ingredient_name TEXT NOT NULL
 );
 
-insert into DimStaff values
-(1,'Alin'),
-(2, 'Mimi');
+INSERT INTO ingredient VALUES
+(1, "Sesame seed bun"),
+(2, "Bun with breast fillet"),
+(3, "Bun with sesame seeds"),
+(4, "Chicken breast fillet"),
+(5, "Spicy chicken breast fillet"),
+(6, "Spicy chicken fillet"),
+(7, "Quorn fillet"),
+(8, "Slice of cheese"),
+(9, "Crunchy hashbrown"),
+(10, "Crispy hashbrown"),
+(11, "Lettuce"),
+(12, "Fiery salsa sauce"),
+(13, "Mayo"),
+(14, "Vegan Mayo");
 
-SELECT * FROM DimStaff;
-
--- Create 4th dimension table
-
-CREATE TABLE DimPayment (
-		payment_id INT NOT NULL,
-	  payment        TEXT
+CREATE TABLE IF NOT EXISTS menu_ingredient (
+  menu_id INTEGER NOT NULL,
+  ingredient_id INTEGER NOT NULL,
+  FOREIGN KEY (menu_id) REFERENCES menu (menu_id),
+  FOREIGN KEY (ingredient_id) REFERENCES ingredient (ingredient_id)
 );
 
-INSERT INTO DimPayment VALUES 
-  (1,'Cash'),
-  (2,'Mobile Banking');
+INSERT INTO menu_ingredient VALUES
+(1, 1),
+(1, 4),
+(1, 11),
+(1, 13),
+(2, 1),
+(2, 4),
+(2, 8),
+(2, 9),
+(2, 11),
+(2, 12),
+(2, 13),
+(3, 2),
+(3, 5),
+(3, 11),
+(3, 13),
+(4, 3),
+(4, 6),
+(4, 8),
+(4, 10),
+(4, 11),
+(4, 12),
+(4, 13),
+(5, 1),
+(5, 7),
+(5, 11),
+(5, 14);
 
-SELECT * FROM DimPayment;
-
--- Create 5th dimension table
-
-CREATE TABLE DimMember_type (
-  member_type	TEXT NOT NULL,
-  member_type_full	TEXT,
-  discount REAL,
-  discount_note TEXT
+CREATE TABLE IF NOT EXISTS orders (
+  customer_id INTEGER NOT NULL,
+  order_date TEXT NOT NULL,
+  payment TEXT NOT NULL,
+  total INTEGER NOT NULL,
+	FOREIGN KEY (customer_id) REFERENCES customer (customer_id)
 );
 
-INSERT into DimMember_type values 
-  ('nm', 'normal member', 0.05, 'discount rate 5%'),
-  ('no', 'not member', 0, 'no discount');
+INSERT INTO orders VALUES
+(1, "2023-06-24", "Cash", 17.97),
+(2, "2023-06-22", "Mobile Banking", 13.98),
+(3, "2023-06-21", "Mobile Banking", 19.97),
+(4, "2023-06-22", "Cash", 17.97),
+(5, "2023-06-23", "Cash", 31.95),
+(6, "2023-06-24", "Mobile Banking", 12.98),
+(7, "2023-06-23", "Cash", 24.96),
+(8, "2023-06-21", "Mobile Banking", 18.97),
+(9, "2023-06-24", "Mobile Banking", 31.95),
+(10, "2023-06-20", "Cash", 13.98),
+(11, "2023-06-23", "Mobile Banking", 19.97),
+(12, "2023-06-24", "Cash", 24.96),
+(13, "2023-06-21", "Mobile Banking", 12.98),
+(14, "2023-06-22", "Cash", 17.98),
+(15, "2023-06-20", "Cash", 18.97);
 
-SELECT * from DimMember_type;
-
-.mode markdown
-.header on
-
--- Insert data in fact table
-  
-CREATE TABLE orders (
-  order_id INT PRIMARY KEY,
-  order_date date,
-  member_id INT,
-  menu_id TEXT,
-  staff_id INT,
-  sale REAL,
-  payment_id TEXT,
-    FOREIGN KEY (member_id) REFERENCES DimMember (member_id),
-    FOREIGN KEY (menu_id) REFERENCES DimMenu (menu_id),
-    FOREIGN KEY (payment_id) REFERENCES DimPayment (payment_id)
-);
-
-INSERT INTO orders VALUES 
-(1, '2023-03-08', 2, 5, 1, 45, 1),
-(2, '2023-03-08', 5, Null, 2, 45, 1),
-(3, '2023-03-08', 4, 3, 2, 50, 1),
-(4, '2023-03-08', 2, 1, 1, 55, 2),
-(5, '2023-03-08', 1, 6, 1, 45, 2),
-(6, '2023-03-09', 6, 4, 2, 50, 1),
-(7, '2023-03-09', 3, Null, 2, 45, 1),
-(8, '2023-03-09', 1, 4, 2, 50, 2),
-(9, '2023-03-09', 4, 3, 1, 50, 1),
-(10, '2023-03-09', 6, 2, 1, 45, 2),
-(11, '2023-03-10', 6, 5, 2, 45, 2),
-(12, '2023-03-10', 3, Null, 2, 50, 1),
-(13, '2023-03-10', 1, 1, 1, 55, 2),
-(14, '2023-03-10', 2, 2, 1, 45, 1),
-(15, '2023-03-10', 4, 5, 2, 45, 1),
-(16, '2023-03-11', 5, 1, 2, 55, 2),
-(17, '2023-03-11', 4, Null, 2, 50, 1),
-(18, '2023-03-11', 1, 6, 1, 45, 1),
-(19, '2023-03-11', 5, 3, 2, 50, 2),
-(20, '2023-03-11', 3, Null, 1, 50, 1);
-
-SELECT * FROM orders;
-
--- query 1 -- sales summary by menu type
-
-SELECT 
-  menu_type,
-  count(menu_type) unit,
-  sum(sale) total_sales
-FROM orders as o
-JOIN DimMenu AS m 
-  ON  o.menu_id = m.menu_id
-GROUP BY 1 
-ORDER BY 3 desc;
-
--- query 2 -- best seller top 3
-
-SELECT 
-  m.menu_name,
-  count(o.order_id) unit,
-  sum(o.sale) total_sales
-FROM orders AS o
-JOIN DimMenu  m ON o.menu_id = m.menu_id
-GROUP BY 1 
-ORDER BY 2 desc
-LIMIT 3;
-
--- query 3 -- sales summary by date
-
+-- QUERY1: JOIN
 SELECT
-  order_date,
-  sum(sale) sales
-FROM orders
-GROUP BY order_date;
+    C.customer_id, 
+    C.name AS customer_name,
+    O.payment AS bill_payment, 
+    O.total AS total_amount
+FROM customer AS C
+JOIN orders AS O
+ON C.customer_id = O.customer_id;
 
--- query 4 -- amount sales transferred on 2023-03-09
-
-WITH order_20230309 as (
-    SELECT * FROM orders o
-    JOIN DimPayment  p ON o.payment_id = p.payment_id
-    where order_date = '2023-03-09'
-)
+-- QUERY2: Aggregrate
 SELECT 
-  order_date,
-  payment,  
-	sum(sale) sales
-FROM order_20230309
-where lower(payment) = 'cash';
+  COUNT(*),
+  SUM(total)
+FROM customer AS C
+JOIN orders AS O
+ON C.customer_id = O.customer_id;
 
--- query 5 -- sales summary by staff
-
-SELECT
-  staff_id,
-  sum(sale) sales
-FROM orders
-GROUP BY staff_id;
-
--- query 6 -- sales summary by member type
-
-CREATE VIEW orders_member AS
-	SELECT
-        o.order_id,
-        o.order_date,
-        mn.member_name,
-        mt.member_type,
-        o.sale
-    FROM orders o 
-    JOIN DimMember  mn ON o.member_id  = mn.member_id
-    JOIN DimMember_type  mt ON mn.member_type = mt.member_type;
-
-SELECT * FROM orders_member; -- check view 
-
+-- QUERY3: WITH
+WITH sub1 AS (
+    SELECT * FROM customer
+    WHERE email LIKE '%@yahoo.com'
+  ), sub2 AS (
+    SELECT * FROM orders
+    WHERE NOT payment = 'Cash' 
+    AND total >= 18.97
+  )
 SELECT 
-  member_type, 
-  sum(sale) sales
-FROM orders_member
-GROUP BY 1
-ORDER BY 2 DESC;
+    sub1.customer_id, 
+    sub1.name AS customer_name,
+    sub2.payment, 
+    sub2.total 
+FROM sub1 
+JOIN sub2 
+ON sub1.customer_id = sub2.customer_id;
 
+-- QUERY4: Subquery
+SELECT 
+    sub1.customer_id, 
+    sub1.name AS customer_name,
+    sub2.payment AS bill_payment, 
+    sub2.total AS total_amount
+FROM (SELECT * FROM customer
+    WHERE email LIKE '%@gmail.com') AS sub1 
+JOIN(SELECT * FROM orders
+    WHERE NOT payment = 'Mobile Banking' 
+    AND total >= 24.96) AS sub2 
+ON sub1.customer_id = sub2.customer_id;
+
+-- QUERY5: JOIN MULTIPLE TABLE 
+SELECT 
+   I.ingredient_name  
+FROM menu AS M
+JOIN menu_ingredient AS N 
+ON M.menu_id = N.menu_id 
+JOIN ingredient AS I 
+ON N.ingredient_id = I.ingredient_id
+WHERE menu_name = 'Zinger Tower Burger';
