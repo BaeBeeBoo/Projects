@@ -7,7 +7,7 @@
 - [ ] [ID Card Parser](https://github.com/baebeeboo/bootcamp_projects/blob/main/Spreadsheets/ID%20Card%20Parser.PNG ) - Using regular expression to extract and parse ID card information
 
 ## SQL Database
-- [ ] [restaurant_owner.sql](https://github.com/baebeeboo/bootcamp_projects/blob/main/SQL/restaurant_owner.sql) - A small database of a restaurant containing 5 dimension tables and 1 fact table, and some SQL queries to analyze data
+- [ ] [restaurant_owner.sql](https://github.com/baebeeboo/bootcamp_projects/blob/main/SQL/restaurant_owner.sql) - A small database of a restaurant and some SQL queries to analyze data
 
 ## R Programming
 - [ ] [Chatbot_Pizza.r](https://github.com/baebeeboo/bootcamp_projects/blob/main/R/Chatbot_Pizza.r) - A rule-based chatbot to order pizza with some dialogue
