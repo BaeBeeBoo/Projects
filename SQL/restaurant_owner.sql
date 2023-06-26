@@ -100,7 +100,7 @@ CREATE TABLE IF NOT EXISTS orders (
   order_date TEXT NOT NULL,
   payment TEXT NOT NULL,
   total INTEGER NOT NULL,
-	FOREIGN KEY (customer_id) REFERENCES customer (customer_id)
+  FOREIGN KEY (customer_id) REFERENCES customer (customer_id)
 );
 
 INSERT INTO orders VALUES
