@@ -1,99 +1,98 @@
-# Pizza
-pizza_id       <- c(1, 2, 3, 4, 5)
-pizza_menu     <- c("Hawaiian", "Meat Deluxe", "Double Cheese", "Seafood Bacon", "Spicy Grilled Chicken")
-meduim_size     <- c(379, 379, 279, 539, 339)
-large_price    <- c(499, 499, 399, 689, 459)
-df_pizza  <- data.frame(pizza_id, pizza_menu, meduim_size, large_price)
+pizza_name<-c("sliced pork shabu","hawaiian", "super deluxe","cheesy puff spicy seafood","mighty meat")
+pizza_price<-c(179,179,179,189,139)
+pizza_menu<-data.frame(pizza_name,pizza_price)
+pizza_menu
 
-# Drink
-drink_id <- c(1, 2, 3)
-drink_menu <- c("Water", "Coke", "Sprite")
-drink_price <- c(20, 35, 35)
-df_drink <- data.frame(drink_id, drink_menu, drink_price)
+pizza_size<-c("L","M","S")
+pizza_size_price<-c(300,200,100)
+sizing<-data.frame(pizza_size,pizza_size_price)
+sizing
 
-# Order
-pizza_order <- NULL
-price_pizza <- NULL
-drink_order <- NULL
-price_drink <- NULL
+pizza_appetizer<-c("bread sticks","fish fingers","calamari")
+pizza_appetizer_price<-c(79,89,99)
+extra_appetizer<-data.frame(pizza_appetizer,pizza_appetizer_price)
+extra_appetizer
 
-# control loop
-ctrl1 <- "3"
-ctrl2 <- "1"
+total<-0
 
-# Welcome Customer
-print("Welcome to Bina's Pizza!")
-
-print("What is your name?")
-name <- readLines("stdin", n=1) 
-paste("Hello K.",name)
-
-print ("What would you like to have?")
-print (df_pizza)
-
-  # Pizza Order
-while(ctrl1 == "3"){
-  print("Please select the number of pizza!")
-  pizza_a <- readLines("stdin", n = 1) 
- if(as.numeric(pizza_a) %in% 1:5){
-   print("Your pizza is :")
-   pizza_order <-append(pizza_order, print(df_pizza[[pizza_a,2]]))
- }
-  print("What size please? (meduim/ large)")
-   pizza_b <- toupper(readLines("stdin", n = 1))
-  if(pizza_b == "MEDUIM"){
-    price_pizza <- append(price_pizza, as.numeric(df_pizza[[pizza_a,3]]))
+chatbot<-function(){
+  print("Wellcome to Bina pizza!")
+  print("what's your name?")
+  customer<-toupper(readLines("stdin",n=1))
+  print(paste("Hello K.",customer))
+  print("Let's order!")
+  print("Please press [yes] to order | press [no] to leave")
+    customer_order<-readLines("stdin",n=1)
+  if(customer_order=="yes"){
+    print(pizza_menu)
+    print("What do you want a flavours of pizza?")
+  }else{
+    print("Thank you, please come again :)")
   }
-  else if(pizza_b == "LARGE"){
-    price_pizza <- append(price_pizza, as.numeric(df_pizza[[pizza_a,4]]))
+  customer_flavour<-readLines("stdin",n=1)
+  if(customer_flavour=="cheesy puff spicy seafood"){
+    total<-total+189
+    print(total)
+  }else if(customer_flavour=="mighty meat"){
+    total<-total+139
+    print(total)
+  }else{
+    total<-total+179
+    print(total)
   }
+    print("What do you want a size of pizza?")
+    print(pizza_size)
+    customer_order_size<-toupper(readLines("stdin",n=1))
+  if(customer_order_size=="L"){
+    total<-total+300
+    print(total)
     
-    print("Do you want to order more pizza? (yes/no)")
-  ctrl1 <- readLines("stdin", n = 1) 
-  if(ctrl1 == "No" | ctrl1 != "Yes"){
-  print("Do you want some drinks?")
     
-  # Drink Order
-print("Please press '1' for YES | press '2' for NO")
-  ctrl2 <- readLines("stdin", n = 1)
-while(ctrl2 == "1"){
-  print("What would you like to drink?")
-  print(df_drink)
-  print("Please select the number of drinks!")
-  drink_a <- readLines("stdin", n = 1) 
- if(as.numeric(drink_a) %in% 1:3){
-   print("Your order is :")
-   drink_order <- append(drink_order, print(df_drink[[drink_a,2]]))
-   price_drink <- append(price_drink, as.numeric(df_drink[[drink_a,3]]))
-
-   print("Do you want anything more? (yes/no)")
-   drink_b <- readLines("stdin", n = 1)
-   if(drink_b == "No" | drink_b != "Yes"){
-   print("All right! Let's summary your order")
-   break}
-   }
- }
-  if(ctrl2 == "2"){
-  print("All right! Let's summary your order")
+  } else if(customer_order_size=="M"){
+    total<-total+200
+    print(total)
+      
+  }else{
+    total<-total+100
+    print(total)
+     
   }
+    print("Would you like anything else?")
+    print("Please press [1] to add appetizer | press [2] no adding and go to summary")
+  customer_add<-readLines("stdin",n=1)
+  if(customer_add=="1"){
+    print(extra_appetizer)
+    print("Add your appetizer")
+  }else{
+    print("No adding")
+    print("---Summary your order---")
+    print(customer)
+    print(customer_flavour)
+    print(customer_order_size)
+    print(total)
+    print("Thank you, enjoy!!")
   }
+      
+  customer_appetizer<-readLines("stdin",n=1)
+  if(customer_appetizer=="bread sticks"){
+    total<-total+79
+  }else if(customer_appetizer=="fish fingers"){
+    total<-total+89
+  }else if(customer_appetizer=="calamari"){
+    total<-total+99
+  } else{
+    print("All right! Let's summary your order")
+  }
+       
+    print("---Summary your order---")
+    print(customer)
+    print(customer_flavour)
+    print(customer_order_size)
+    print(customer_appetizer)
+    print(total)
+    print("Thank you for you order")
+    print("Enjoy eating :)")
+    
 }
 
-#Summary Order
-all_order <- list(Pizza = as.character(pizza_order),
-                          Pizza_price = as.numeric(price_pizza),
-                    Drinks = as.character(drink_order),
-                    Drinks_price = as.numeric(price_drink)
-                   )
-sum_pizza <- sum(all_order$Pizza_price)
-sum_drink <- sum(all_order$Drinks_price)
-
-price <- sum_pizza + sum_drink
-
-print("------------- Receipt -------------")
-print(paste("Customer Name: " ,name))
-print("------------- Your Order -------------")
-print(all_order)
-print(paste("Total :", price," THB"))
-print("------------THANK YOU------------")
-
+chatbot()
