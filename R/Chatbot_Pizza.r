@@ -28,6 +28,7 @@ chatbot<-function(){
     print("What do you want a flavours of pizza?")
   }else{
     print("Thank you, please come again :)")
+    break
   }
   customer_flavour<-readLines("stdin",n=1)
   if(customer_flavour=="cheesy puff spicy seafood"){
