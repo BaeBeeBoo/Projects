@@ -54,8 +54,8 @@ print("Wellcome to Bina pizza!. Please type [ready] to view our menu")
   }
 
     print("Would you like anything else?")
-    print("press[1] to add appetizer")
-    print("press[2] no adding and go to summary")
+    print("Press [1] to add appetizer")
+    print("Press [2] no adding and go to summary")
     customer_add<-readLines("stdin",n=1)
   
   while(TRUE){
