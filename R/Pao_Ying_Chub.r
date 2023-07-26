@@ -1,6 +1,6 @@
 win <- 0
 lose <- 0
-tie <- 0
+draw <- 0
 
 number <- c(1,2,3,4)
 items <- c("rock", "paper", "scissor","quit")
@@ -25,8 +25,8 @@ play_game <- function(){
 
   if (user_play == bot_play){
     print(paste("User:",user_play, "vs Bot:",bot_play))
-    print("You tie!")
-    tie <- tie +1
+    print("Draw!")
+    draw <- draw +1
     
   } else if(user_play == 1 & bot_play == 2 |
       user_play == 2 & bot_play == 3 |
@@ -46,7 +46,7 @@ play_game <- function(){
       print("The results")
       print(paste("Win:", win))
       print(paste("Lose:", lose))
-      print(paste("Tie:",tie))
+      print(paste("Draw:", draw))
       print("Bye!")
       break
       }
