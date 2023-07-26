@@ -27,38 +27,40 @@ print("Wellcome to Bina pizza!. Please type [ready] to view our menu")
   print(pizza)
   print("What do you want a flavours of pizza?")
 
+  while(TRUE){
   customer_flavour<-readLines("stdin",n=1)
-  if(customer_flavour=="cheesy puff spicy seafood"){
-    total<-total+189
-    print(total)
-  }else if(customer_flavour=="mighty meat"){
-    total<-total+139
-    print(total)
-  }else{
-    total<-total+179
-    print(total)
+  if(customer_flavour %in% pizza_name){
+  print (paste("Perfect!", pizza[pizza$pizza_name == customer_flavour, 1]))
+  total <- total + pizza[pizza$pizza_name == customer_flavour, 2]
+  print(total)
+  break
+  } else {
+    print("Sorry, We don't have this flavour")
+  }
   }
     
+    print(sizing)
     print("What do you want a size of pizza?")
-    print(pizza_size)
+
+  while(TRUE){
     customer_order_size<-toupper(readLines("stdin",n=1))
-  if(customer_order_size=="L"){
-    total<-total+300
+  if(customer_order_size %in% pizza_size){
+    print (paste("Size!", sizing[sizing$pizza_size == customer_order_size, 1]))
+    total <- total + sizing[sizing$pizza_size == customer_order_size, 2]
     print(total)
-  } else if(customer_order_size=="M"){
-    total<-total+200
-    print(total)  
-  }else{
-    total<-total+100
-    print(total)  
+    break
+  } else {
+    print("Sorry, We don't have this size")
+  }
   }
 
     print("Would you like anything else?")
-    print("Press [1] to add appetizer")
-    print("Press [2] no adding and go to summary")
+    print("press[1] to add appetizer")
+    print("press[2] no adding and go to summary")
     customer_add<-readLines("stdin",n=1)
   
   while(TRUE){
+    
   if(customer_add=="2"){
     print("---Summary your order---")
     print(customer_flavour)
@@ -68,17 +70,20 @@ print("Wellcome to Bina pizza!. Please type [ready] to view our menu")
     break 
   } else if(customer_add=="1"){
     print(extra_appetizer)
-    print("Add your appetizer")
+    print("What would you like to appetizer?")
   } 
 
+  while(TRUE){
   customer_appetizer<-readLines("stdin",n=1)
-  if(customer_appetizer=="bread sticks"){
-    total<-total+79
-  }else if(customer_appetizer=="fish fingers"){
-    total<-total+89
-  }else if(customer_appetizer=="calamari"){
-    total<-total+99
-  } 
+  if(customer_appetizer %in% pizza_appetizer){
+  print (paste("Excellent!", extra_appetizer[extra_appetizer$pizza_appetizer == customer_appetizer, 1]))
+  total <- total + extra_appetizer[extra_appetizer$pizza_appetizer == customer_appetizer, 2]
+  print(total)
+  break
+  } else {
+    print("Sorry, We don't have this appetizer")
+  }
+  }
 
   print("---Summary your order---")
   print(customer_flavour)
@@ -89,6 +94,7 @@ print("Wellcome to Bina pizza!. Please type [ready] to view our menu")
   break
 
   }
+  
 } 
   
 pizza_chatbot()
