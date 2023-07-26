@@ -60,7 +60,6 @@ print("Wellcome to Bina pizza!. Please type [ready] to view our menu")
     customer_add<-readLines("stdin",n=1)
   
   while(TRUE){
-    
   if(customer_add=="2"){
     print("---Summary your order---")
     print(customer_flavour)
