@@ -23,5 +23,5 @@
 - [ ] [Analyzing_Sales_Data.ipynb](https://github.com/baebeeboo/bootcamp_projects/blob/main/Python/Final%20Project%20-%20Analyzing%20Sales%20Data.ipynb) - Using the `pandas` library to analyze sales data
 
 ## Dashboard
-- [ ] [Sales Report 2019](https://lookerstudio.google.com/reporting/8163a98a-49f9-48b3-b217-40f893488d49) - Dashboard showing the sales report 2019 : `Looker Studio`
+- [ ] [Sales Report 2019](https://lookerstudio.google.com/reporting/8163a98a-49f9-48b3-b217-40f893488d49) - Dashboard showing the sales report 2019 : `Google Data Studio`
 - [ ]  [Forbes Global 2000 - 2021 Unified Industry](https://public.tableau.com/app/profile/baebee/viz/ForbesGlobal2000-2021UnifiedIndustry/Dashboard2) - Dashboard showing the forbes global 2000 - 2021 unified industry : `Tableau Public`
