@@ -43,11 +43,11 @@ play_game <- function(){
       win <- win +1
     
       } else if (user_play == 4){
-      print("The results")
+      print("Scoring summary")
       print(paste("Win:", win))
       print(paste("Lose:", lose))
       print(paste("Draw:", draw))
-      print("Bye!")
+      print(paste("Bye!", user_name))
       break
       }
     
