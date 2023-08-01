@@ -14,14 +14,17 @@ total<-0
 
 pizza_chatbot <- function() {
 
-print("Wellcome to Bina pizza!. Please type [ready] to view our menu")
+print("Wellcome to Bina pizza!")
+print("What's your name?")
+customer<-toupper(readLines("stdin",n=1))
+print(paste("Hello K.",customer,",","Please type [ready] to view our menu"))
   
   while (TRUE) {
     ready <- readLines("stdin", n = 1)
     if (tolower(ready) == "ready") {
       break
     }
-    print("Wellcome to Bina pizza!. Please type [ready] to view our menu")
+    print("Please type [ready] to view our menu")
   }
   
   print(pizza)
@@ -62,9 +65,10 @@ print("Wellcome to Bina pizza!. Please type [ready] to view our menu")
   while(TRUE){
   if(customer_add=="2"){
     print("---Summary your order---")
-    print(customer_flavour)
-    print(customer_order_size)
-    print(total)
+    print(paste("K.",customer))
+    print(paste("Pizza:",customer_flavour))
+    print(paste("Size:",customer_order_size))
+    print(paste("Totol",total,"bath"))
     print("Thank you, Enjoy eating!!")
     break 
   } else if(customer_add=="1"){
@@ -85,10 +89,11 @@ print("Wellcome to Bina pizza!. Please type [ready] to view our menu")
   }
 
   print("---Summary your order---")
-  print(customer_flavour)
-  print(customer_order_size)
-  print(customer_appetizer)
-  print(total)
+  print(paste("K.",customer))
+  print(paste("Pizza:",customer_flavour))
+  print(paste("Size:",customer_order_size))
+  print(paste("Appetizer:",customer_appetizer))
+  print(paste("Totol",total,"bath"))
   print("Thank you, Enjoy eating!!")
   break
 
