@@ -12,7 +12,7 @@ extra_appetizer<-data.frame(pizza_appetizer,pizza_appetizer_price)
 
 total<-0
 
-pizza_chatbot <- function() {
+chatbot_pizza <- function() {
 
 print("Wellcome to Bina pizza!")
 print("What's your name?")
@@ -101,4 +101,4 @@ print(paste("Hello K.",customer,",","Please type [ready] to view our menu"))
   
 } 
   
-pizza_chatbot()
+chatbot_pizza()
