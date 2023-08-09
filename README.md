@@ -14,7 +14,8 @@
 - [ ] [Pao_Ying_Chub.r](https://github.com/baebeeboo/bootcamp_projects/blob/main/R/Pao_Ying_Chub.r) - An interactive rock-paper-scissors game with a bot
 
 ## Data Transformation
-- [ ] [NYC_Flights_2013_Analysis.ipynb](https://github.com/baebeeboo/bootcamp_projects/blob/main/R/NYC_Flights_2013_Analysis.ipynb) - Analyzing the `nycflights13` dataset using the `dplyr` package in `R` 
+- [ ] [NYC_Flights_2013_Analysis.ipynb](https://github.com/baebeeboo/bootcamp_projects/blob/main/R/NYC_Flights_2013_Analysis.ipynb) - Analyzing the `nycflights13` dataset using the `dplyr` package in `R`
+- [ ] [RPostgreSQL.r]() - Using the `RPostgreSQL` package in `R` to connect to the `PostgreSQL` database server hosted by `ElephantSQL`
 
 ## Data Visualization
 - [ ] [Coffee_Chain.pdf](https://github.com/baebeeboo/bootcamp_projects/blob/main/R/Coffee_Chain.pdf) - Creating 4 charts to visualize the data queried from the `data.world` dataset using the `ggplot2` package in `R`
