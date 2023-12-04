@@ -25,7 +25,6 @@
 
 ## Dashboard
 - [ ] [Online Shopping Report
-](https://lookerstudio.google.com/reporting/4cde94b2-48e9-4eaa-ac53-94db3f3dc1f4/page/neBkD) - Dashboard showing the Online Shopping Report
+](https://lookerstudio.google.com/reporting/4cde94b2-48e9-4eaa-ac53-94db3f3dc1f4/page/neBkD) - Dashboard showing the online shopping report
  : `Looker Studio`
-- [ ] [Sales Report 2019](https://lookerstudio.google.com/reporting/8163a98a-49f9-48b3-b217-40f893488d49) - Dashboard showing the sales report 2019 : `Looker Studio`
 - [ ]  [Forbes Global 2000 - 2021 Unified Industry](https://public.tableau.com/app/profile/baebee/viz/ForbesGlobal2000-2021UnifiedIndustry/Dashboard2) - Dashboard showing the forbes global 2000 - 2021 unified industry : `Tableau Public`
