@@ -21,7 +21,7 @@
 - [ ] [Coffee_Chain.pdf](https://github.com/baebeeboo/bootcamp_projects/blob/main/R/Coffee_Chain.pdf) - Creating 4 charts to visualize the data queried from the `data.world` dataset using the `ggplot2` package in `R`
 
 ## Essential Python for Data Analyst
-- [ ] [Analyzing_Sales_Data.ipynb](https://github.com/baebeeboo/bootcamp_projects/blob/main/Python/Final%20Project%20-%20Analyzing%20Sales%20Data.ipynb) - Using the `pandas` library to analyze sales data
+- [ ] [Analyzing_Sales_Data.ipynb](https://github.com/baebeeboo/bootcamp_projects/blob/main/Python/Analyzing_Sales_Data.ipynb) - Using the `pandas` library to analyze sales data
 
 ## Dashboard
 - [ ] [Online Shopping Report
