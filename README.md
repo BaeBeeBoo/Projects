@@ -10,7 +10,7 @@
 - [ ] [restaurant_owner.sql](https://github.com/baebeeboo/bootcamp_projects/blob/main/SQL/restaurant_owner.sql) - A restaurant database and SQL queries for data analysis
       
 ## R Programming
-- [ ] [Chatbot_Pizza.r](https://github.com/baebeeboo/bootcamp_projects/blob/main/R/Chatbot_Pizza.r) - Our rule-based chatbot facilitates pizza orders through interactive dialogue 
+- [ ] [Chatbot_Pizza.r](https://github.com/baebeeboo/bootcamp_projects/blob/main/R/Chatbot_Pizza.r) - A rule-based chatbot specifically designed for pizza ordering, engaging in interactive dialogue with customers 
 - [ ] [Pao_Ying_Chub.r](https://github.com/baebeeboo/bootcamp_projects/blob/main/R/Pao_Ying_Chub.r) - An interactive rock-paper-scissors game with a bot
 
 ## Data Transformation
