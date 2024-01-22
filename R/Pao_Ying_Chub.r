@@ -3,7 +3,7 @@ lose <- 0
 draw <- 0
 
 number <- c(1,2,3,4)
-items <- c("rock", "paper", "scissor","quit")
+items <- c("rock", "paper", "scissors","quit")
 df <- data.frame(number, items)
 
 play_game <- function(){
@@ -18,7 +18,7 @@ play_game <- function(){
   if(start == 4){print("Bye!")}
   while (start == 0){
   print("Enter the following number to play the game")
-  print("1:rock, 2:paper, 3:scissor")
+  print("1:rock, 2:paper, 3:scissors")
   print("Let's play!")
   user_play <- readLines("stdin", n=1)
   bot_play <- sample(c(1,2,3),1)
