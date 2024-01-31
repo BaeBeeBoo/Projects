@@ -32,8 +32,6 @@
 - [ ]  [Forbes Global 2000 - 2021 Unified Industry](https://public.tableau.com/app/profile/baebee/viz/ForbesGlobal2000-2021UnifiedIndustry/Dashboard2) - Dashboard showing the forbes global 2000 - 2021 unified industry : `Tableau Public`  
 
 <br />
-<br />
-<br />
 
 #### Badge: [Certified Professional Data Analyst](https://badgr.com/public/assertions/eDmxbkeaSUasGJzo9g9T6A)
 ![DataRockie School - Certified Professional Data Analyst (New) - 2023-12-06](https://github.com/baebeeboo/bootcamp_projects/assets/126922854/7cd19d45-04f9-4ced-9401-2c029c3b7edf)
