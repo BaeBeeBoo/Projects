@@ -20,6 +20,10 @@
 ## Data Visualization
 - [ ] [Coffee_Chain.pdf](https://github.com/baebeeboo/bootcamp_projects/blob/main/R/Coffee_Chain.pdf) - Crafting 4 insightful charts with `ggplot2` to visualize data from `data.world` in `R`  
 
+## Intro to Python Programming
+- [ ] [] - Playing Rock-Paper-Scissors with `Python`
+- [ ] [] - An ATM class `(Object-Oriented Programming)` with at least 5 methods for ATM functions
+
 ## Essential Python for Data Analyst
 - [ ] [Analyzing_Sales_Data.ipynb](https://github.com/baebeeboo/bootcamp_projects/blob/main/Python/Analyzing_Sales_Data.ipynb) - Using the `pandas` library to analyze sales data
 
