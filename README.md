@@ -18,6 +18,7 @@
 - [ ] [RPostgreSQL.r](https://github.com/baebeeboo/bootcamp_projects/blob/main/R/RPostgreSQL.r) - Using the `RPostgreSQL` package in `R` to connect to the `PostgreSQL` database server hosted by `ElephantSQL`
 
 ## Data Visualization
+- [ ] [Skooldio_Facebook_Data_2023](https://docs.google.com/spreadsheets/d/1jAzgpKp7YNr5R6zZtIUyf0FfEcCdFLgKiFg_ElezOFQ/edit#gid=0) - Creating charts to visualize Skoodio Facebook Data 2023 using the `Pivot Table`
 - [ ] [Coffee_Chain.pdf](https://github.com/baebeeboo/bootcamp_projects/blob/main/R/Coffee_Chain.pdf) - Crafting 4 insightful charts with `ggplot2` to visualize data from `data.world` in `R`  
 
 ## Intro to Python Programming
