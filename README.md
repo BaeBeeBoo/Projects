@@ -22,8 +22,8 @@
 - [ ] [Coffee_Chain.pdf](https://github.com/baebeeboo/bootcamp_projects/blob/main/R/Coffee_Chain.pdf) - Crafting 4 insightful charts with `ggplot2` to visualize data from `data.world` in `R`  
 
 ## Statistics and Machine Learning 
-- [ ] [Logistic_Regression_with_Titanic_Dataset](https://28076024ca2f463ca6cb6409cd804c3b.app.posit.cloud/file_show?path=%2Fcloud%2Fproject%2FLogistic-Regression.html) - Using the `titanic_train` dataset to predict passenger survival by logistic regression in `R`
-- [ ] [House_Price_India](https://5226cc0fc81c4e7f96e5a1a3b9ddc4d8.app.posit.cloud/file_show?path=%2Fcloud%2Fproject%2FHouse-Price.html) - Machine learning model for `house price india` using the `caret` package in `R`
+- [ ] [Logistic_Regression_with_Titanic_Dataset](https://github.com/baebeeboo/bootcamp_projects/blob/main/R/Titanic_Train.pdf) - Using the `titanic_train` dataset to predict passenger survival by logistic regression in `R`
+- [ ] [House_Price_India](https://github.com/baebeeboo/bootcamp_projects/blob/main/R/House_Price_India.pdf) - Machine learning model for `house price india` using the `caret` package in `R`
 
 ## Intro to Python Programming
 - [ ] [Pao_Ying_Chub.ipynb](https://github.com/baebeeboo/bootcamp_projects/blob/main/Python/Pao_Ying_Chub.ipynb) - Playing Rock-Paper-Scissors with `Python`
