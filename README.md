@@ -23,7 +23,7 @@
 
 ## Statistics and Machine Learning 
 - [ ] [Logistic_Regression_with_Titanic_Dataset](https://github.com/baebeeboo/bootcamp_projects/blob/main/R/Titanic_Train.pdf) - Using the `titanic_train` dataset to predict passenger survival by logistic regression in `R`
-- [ ] [House_Price_India](file:///C:/Users/andmin/Downloads/House_Price_India.html) - Machine learning model for `house price india` using the `caret` package in `R`
+- [ ] [House_Price_India](https://github.com/baebeeboo/bootcamp_projects/blob/main/R/House_Price_India.pdf) - Machine learning model for `house price india` using the `caret` package in `R`
 
 ## Intro to Python Programming
 - [ ] [Pao_Ying_Chub.ipynb](https://github.com/baebeeboo/bootcamp_projects/blob/main/Python/Pao_Ying_Chub.ipynb) - Playing Rock-Paper-Scissors with `Python`
