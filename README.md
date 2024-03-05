@@ -31,6 +31,7 @@
 
 ## Essential Python for Data Analyst
 - [ ] [Analyzing_Sales_Data.ipynb](https://github.com/baebeeboo/bootcamp_projects/blob/main/Python/Analyzing_Sales_Data.ipynb) - Using the `pandas` library to analyze sales data
+- [ ] [Public_API.ipynb](https://github.com/baebeeboo/bootcamp_projects/blob/main/Python/Public_API.ipynb) - How to find a public API and use Python to retrieve data
 
 ## Dashboard
 - [ ] [Online Shopping Report](https://lookerstudio.google.com/reporting/4cde94b2-48e9-4eaa-ac53-94db3f3dc1f4/page/neBkD) - Dashboard visualizing trends in online shopping : `Looker Studio`
