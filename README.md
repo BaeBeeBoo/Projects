@@ -3,8 +3,8 @@
 
 ## Spreadsheets
 - [ ] [Dynamic Query](https://github.com/baebeeboo/bootcamp_projects/blob/main/Spreadsheets/Dynamic%20Query.PNG) - Queries that return results dynamically
-- [ ] [Converting Date](https://github.com/baebeeboo/bootcamp_projects/blob/main/Spreadsheets/Convert%20TH%20to%20EN%20Date.PNG) - Converting Thai dates to English dates
-- [ ] [ID Card Parser](https://github.com/baebeeboo/bootcamp_projects/blob/main/Spreadsheets/ID%20Card%20Parser.PNG ) - Extracting and parsing ID card information using regular expressions
+- [ ] [Converting Date](https://github.com/baebeeboo/bootcamp_projects/blob/main/Spreadsheets/Convert%20TH%20to%20EN%20Date.png) - Converting Thai dates to English dates
+- [ ] [ID Card Parser](https://github.com/baebeeboo/bootcamp_projects/blob/main/Spreadsheets/ID%20Card%20Parser.png) - Extracting and parsing ID card information using regular expressions
       
 ## SQL Database
 - [ ] [restaurant_owner.sql](https://github.com/baebeeboo/bootcamp_projects/blob/main/SQL/restaurant_owner.sql) - A restaurant database and SQL queries for data analysis
