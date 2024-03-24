@@ -30,7 +30,7 @@
 
 ## Essential Python for Data Analyst
 - [ ] [Analyzing_Sales_Data.ipynb](https://github.com/baebeeboo/bootcamp_projects/blob/main/Python/Analyzing_Sales_Data.ipynb) - Using the `pandas` library to analyze sales data
-- [ ] [Public_API.ipynb](https://github.com/baebeeboo/bootcamp_projects/blob/main/Python/Public_API.ipynb) - How to find a public API and use Python to retrieve data
+- [ ] [Public_API.ipynb](https://github.com/baebeeboo/bootcamp_projects/blob/main/Python/Public_API.ipynb) - How to find a public API and use `Python` to retrieve data
 - [ ] [Coffee_Chain_Sales_Analysis.ipynb](https://github.com/baebeeboo/bootcamp_projects/blob/main/Python/Coffee_Chain_Sales_Analysis.ipynb) - Analyze Coffee Chain Sales data from a `Kaggle` dataset using the `pandas` library in Python
 
 ## Dashboard
