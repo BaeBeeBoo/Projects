@@ -178,4 +178,3 @@ ON M.menu_id = N.menu_id
 JOIN ingredient AS I 
 ON N.ingredient_id = I.ingredient_id
 WHERE menu_name = 'Zinger Tower Burger';
- 
