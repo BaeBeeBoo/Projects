@@ -1,6 +1,6 @@
 win <- 0
 lose <- 0
-draw <- 0 
+draw <- 0
 
 number <- c(1,2,3,4)
 items <- c("rock", "paper", "scissors","quit")
