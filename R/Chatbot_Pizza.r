@@ -1,6 +1,6 @@
 pizza_name<-c("sliced pork shabu","hawaiian", "super deluxe","cheesy puff spicy seafood","mighty meat")
 pizza_price<-c(179,179,179,189,139)
-pizza<-data.frame(pizza_name,pizza_price)
+pizza<-data.frame(pizza_name,pizza_price) 
 
 pizza_size<-c("L","M","S")
 pizza_size_price<-c(300,200,100)
